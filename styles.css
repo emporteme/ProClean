@@ -1,0 +1,29 @@
+/*@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url("fonts/museosanscyrl_100.woff");
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url("fonts/museosanscyrl_100.woff");
+    font-weight: 800;
+    font-display: swap;
+    font-style: normal;
+}*/
+.red {
+    color: red;
+    font-family: 'Manrope';
+}
+
+.blue {
+    color: blue;
+    font-family: 'Museo Sans Cyrl';
+}
+
+.blue2 {
+    font-weight: 800;
+    color: yellow;
+    font-family: 'Museo Sans Cyrl';
+}
