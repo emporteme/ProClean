@@ -349,6 +349,7 @@ header {
 .main {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .main .left {
@@ -359,14 +360,14 @@ header {
     width: 832px;
     height: 465px;
     border-radius: 30px;
-    margin-left: 80px;
-    margin-right: 100px;
+    margin-left: 100px;
 }
 
 .main .right {
     font-family: 'Mulish';
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    margin-right: 200px;
 }
 
 .main .right h3 {
@@ -399,4 +400,125 @@ header {
 .main .right .btn {
     margin-top: 20px;
     width: 16vw;
+}
+
+/*почему мы?*/
+.six {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.icon {
+    padding: 30px;
+    width: 25vw;
+    height: 45vh;
+    font-family: 'Mulish';
+    border-radius: 30px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon h2 {
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #151515;
+    padding-top: 30px;
+    padding-bottom: 7px;
+}
+
+.icon .line_black {
+    width: 25px;
+    height: 2px;
+    background: #151515;
+    border-radius: 3px;
+}
+
+.icon p {
+    padding-top: 13px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #777777;
+}
+
+/*footer*/
+footer {
+    background-color: #1C1C1C;
+    height: 43vh;
+}
+
+footer .row2 {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Mulish';
+    color: #FFFFFF;
+    padding: 50px;
+}
+
+
+
+.group h1 {
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.group .logos img {
+    padding-right: 5px;
+}
+
+.group h2 {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.group2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.group a {
+    text-decoration: none;
+    color: #CFCFCF;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-right: 50px;
+}
+
+.phone a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.group_last {
+    padding-right: 50px;
+}
+
+footer .line {
+    width: 90vw;
+    height: 1px;
+    background-color: #525252;
+    margin-left: 50px;
+}
+
+.last p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding-left: 50px;
+    margin-top: -10px;
 }
