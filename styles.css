@@ -1,29 +1,402 @@
-/*@font-face {
-    font-family: 'Museo Sans Cyrl';
-    src: url("fonts/museosanscyrl_100.woff");
-    font-weight: 300;
-    font-display: swap;
-    font-style: normal;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-@font-face {
-    font-family: 'Museo Sans Cyrl';
-    src: url("fonts/museosanscyrl_100.woff");
-    font-weight: 800;
-    font-display: swap;
-    font-style: normal;
-}*/
-.red {
-    color: red;
+
+body {
     font-family: 'Manrope';
+    text-decoration: none;
 }
 
-.blue {
-    color: blue;
-    font-family: 'Museo Sans Cyrl';
+header {
+    background-image: url("img/phon.png");
+    /* The image used */
+    /*background-color: #cccccc;*/
+    /* Used if the image is unavailable */
+    height: 768px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
 }
 
-.blue2 {
+.nav {
+    display: flex;
+    align-items: center;
+    margin: 0 70px 20px 70px;
+    padding-top: 20px;
+    font-family: 'Mulish', 'Mulish';
+}
+
+.nav .logo {
+    margin-right: 16vw;
+}
+
+.nav .items ul {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-right: 6vw;
+    color: #CACACA;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.nav .items ul .main {
+    color: white;
+    font-weight: 600;
+}
+
+.nav .items ul li {
+    display: flex;
+}
+
+.btn {
+    background-color: #05A1DC;
+    padding: 11px 39px;
+    border-radius: 5px;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-style: 14px;
+    color: white;
+}
+
+.after {
+    margin-top: 180px;
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.after .left h1 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.after .left h1 span {
     font-weight: 800;
-    color: yellow;
-    font-family: 'Museo Sans Cyrl';
+    font-size: 50px;
+}
+
+.after .left p {
+    font-family: 'Mulish';
+    font-weight: 300;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-top: 17px;
+    padding-bottom: 40px;
+}
+
+.after .left .btn {
+    width: 15vw;
+}
+
+.after .left .down {
+    padding-top: 150px;
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+}
+
+.after .left .down .scroll {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-transform: uppercase;
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-style: 17px;
+}
+
+.after .left .down .scroll img {
+    width: 2.5vw;
+}
+
+.after .left .down .scroll p {
+    padding: 0;
+    color: #B0B0B0;
+}
+
+.after .right {
+    padding-right: 1vw;
+    padding-top: 10vh;
+    display: flex;
+    gap: 1vh;
+    flex-direction: column;
+}
+
+.after .right img {
+    cursor: pointer;
+}
+
+.discount {
+    margin: 20px 70px;
+    height: 443px;
+    background-image: url("img/phon2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-top: 10vh;
+    padding-left: 7vw;
+}
+
+.discount h1 {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 145px;
+}
+
+.discount .right {
+    padding-left: 1vw;
+    padding-top: 5vh;
+    font-family: 'Mulish';
+}
+
+.discount .right h2 {
+    font-weight: 300;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.discount .right h2 span {
+    font-weight: 600;
+}
+
+.discount .right p {
+    padding-top: 1.5vh;
+    font-weight: 300;
+    font-size: 20px;
+    color: #E4E4E4;
+}
+
+.discount .right .btn {
+    margin-top: 5vh;
+    padding: 14px 36px;
+    color: #05A1DC;
+    background-color: #fff;
+    width: 15vw;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.top {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.top h1 {
+    font-weight: 600;
+    font-size: 52px;
+    color: #151515;
+    text-transform: uppercase;
+}
+
+.top img {
+    width: 50px;
+    height: 50px;
+}
+
+.bigC p {
+    font-weight: 500;
+    font-size: 20px;
+    color: #888888;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.row {
+    margin: 10vh 10vw;
+    display: flex;
+    align-items: center;
+}
+
+.vertical {
+    width: 100px;
+    transform: rotate(-90deg);
+    letter-spacing: 0.04em;
+}
+
+.row .big {
+    display: flex;
+}
+
+.row .big .little h2 {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Mulish';
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+.row .big .little p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+    text-align: start;
+}
+
+.img1 {
+    background-image: url("img/img1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    width: 337px;
+}
+
+.img2 {
+    background-image: url("img/img2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    width: 337px;
+}
+
+.img3 {
+    background-image: url("img/img3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    width: 337px;
+}
+
+/*ЧТО О НАС ГОВОВРЯТ*/
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.left_photo {
+    background-image: url("img/phones.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 725px;
+    width: 630px;
+}
+
+.right_photo h1 {
+    font-weight: 600;
+    font-size: 52px;
+    text-transform: uppercase;
+    color: #151515;
+    line-height: 62px;
+}
+
+.right_photo p {
+    padding-top: 20px;
+    padding-bottom: 35px;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #888888;
+}
+
+.right_photo .btn {
+    text-transform: uppercase;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*процесс уборки*/
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider .first {
+    background-image: url("img/Rectangle\ 1247.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 615px;
+    width: 808px;
+}
+
+.slider .second {
+    background-image: url("img/Rectangle\ 1246.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 615px;
+    width: 400px;
+}
+
+/*что входит в уборку?*/
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main .left {
+    background-image: url("img/img4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 832px;
+    height: 465px;
+    border-radius: 30px;
+    margin-left: 80px;
+    margin-right: 100px;
+}
+
+.main .right {
+    font-family: 'Mulish';
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.main .right h3 {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #888888;
+}
+
+.line {
+    margin-top: 15px;
+    margin-bottom: 35px;
+    width: 200px;
+    height: 1px;
+    background-color: #E1E1E1;
+}
+
+.main .right h2 {
+    font-size: 24px;
+    color: #444444;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.main .right .choosed {
+    color: #05A1DC;
+    font-weight: 700;
+}
+
+.main .right .btn {
+    margin-top: 20px;
+    width: 16vw;
 }
