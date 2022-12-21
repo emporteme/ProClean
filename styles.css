@@ -442,6 +442,61 @@ header {
     color: #777777;
 }
 
+/*form_block*/
+.form_block {
+    margin: 20px 70px;
+    /*height: 443px;*/
+    width: 80vw;
+    background-image: url("img/phon3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-top: 10vh;
+    padding-left: 7vw;
+    border-radius: 30px;
+}
+
+.form_block h2 {
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.form_block h2 span {
+    font-weight: 700;
+}
+
+/*left_paper*/
+.left_paper {
+
+    margin: 20px 70px;
+    /*height: 443px;*/
+    width: 80vw;
+    background-image: url("img/phon4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    padding-top: 10vh;
+    padding-left: 7vw;
+    border-radius: 30px;
+}
+
+.left_paper h2 {
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.left_paper h2 span {
+    font-weight: 700;
+}
+
 /*footer*/
 footer {
     background-color: #1C1C1C;
@@ -521,4 +576,41 @@ footer .line {
     color: #FFFFFF;
     padding-left: 50px;
     margin-top: -10px;
+}
+
+/*наши услуги*/
+.item4 {
+    font-family: 'Mulish';
+    width: 20vw;
+    border-radius: 50px;
+}
+
+.item4 img {
+    width: 20vw;
+}
+
+.item4 .item {
+    background-color: #F4F7F9;
+    padding: 20px;
+}
+
+.item4 .item h2 {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #151515;
+}
+
+.item4 .item p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666666;
+}
+
+.row4 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 70px;
+    margin-right: 70px;
 }
